@@ -1,0 +1,162 @@
+body {
+  /* Light Mode Colors */
+  --background-color: rgb(255, 255, 255);
+  --background-color-accent: rgb(144, 238, 144);
+  --text-color: black;
+  --text-color-secondary: rgba(0, 0, 0, 0.65);
+
+  font-family: "Figtree", sans-serif;
+  background-color: var(--background-color);
+  transition: color 0.3s ease;
+  margin: 0px;
+}
+
+body.dark-mode {
+  /* Dark Mode Colors (applied with .dark-mode class) */
+  --background-color: #020617;
+  --background-color-accent: #16A34A;
+  --text-color: #f9fafb;
+  --text-color-secondary: #d1d5db;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Prevents scrolling body when the modal is shown */
+body.modal-open {
+  overflow: hidden;
+}
+
+.photography-title {
+  color: var(--text-color);
+  font-size: clamp(2.5rem, 3.8vw, 3.5rem);
+  margin-left: 8%;
+  font-weight: 600;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.photography-text {
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 20px;
+  color: var(--text-color-secondary);
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.photo-grid-container {
+  width: 84%;
+  margin: 40px auto;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Photo item styling */
+.photo-item {
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.photo-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.photo-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-item.vertical {
+  grid-row: span 2;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 85vw;
+  max-height: 85vh;
+  user-select: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #bbb;
+}
+
+.more-photos-text {
+  color: var(--text-color);
+  margin: 140px auto;
+  font-size: clamp(1.5rem, 3vw, 3.5rem);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Media Queries */
+/* Media Queries for Width */
+
+/* Mid-sized screens */
+@media (max-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .photo-grid-container {
+    width: 80%;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}

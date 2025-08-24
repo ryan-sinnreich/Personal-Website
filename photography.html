@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Ryan Sinnreich | Photography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hi I'm Ryan Sinnreich, this page showcases my photography" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon7-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon7-16x16.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/photography.css">
+
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="body">
+  <script src="scripts/startupTheme.js"></script>
+
+  <div id="header-placeholder"></div>
+
+  <main id="scrollContainer" class="scroll-container">
+    <div id="start">
+      <p class="photography-title">My Photography</p>
+      <p class="photography-text">When I was in elementary school, I was gifted a camera for my birthday. Since that
+        day, I have fallen in love with photography. I mainly take photos of nature, but I often explore other forms of
+        photography. If you would like a high-resolution download of any of my photos, please reach out</p>
+    </div>
+
+    <div class="photo-grid-container">
+      <div class="photo-grid" id="photoGrid"></div>
+    </div>
+
+    <!-- The Modal (Only shown when a photo is clicked) -->
+    <div id="photoModal" class="modal">
+      <span class="close-button" id="closeModal"><i class="ph-bold ph-x"></i></span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <p class="more-photos-text">More photos to be added soon...</p>
+
+    <div id="footer-placeholder"></div>
+  </main>
+
+  <!-- JS -->
+  <script src="scripts/header.js"></script>
+  <script src="scripts/photography.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Ryan Sinnreich | Computer Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hi I'm Ryan Sinnreich, I do alot from Photography to App Development. I love technology. This is my personal site where I display my work and document my journey" />
+  <meta name="author" content="Ryan Sinnreich">
+  <meta name="keywords" content="Ryan Sinnreich, Computer Engineer">
+  <meta name="theme-color" content="#90EE90">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Home Page" />
+  <meta property="og:description" content="Hi I'm Ryan Sinnreich this is my personal site where I display my work" />
+  <meta property="og:image" content="https://ryansinnreich.com/assets/preview.png" />
+  <meta property="og:url" content="https://ryansinnreich.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ryan Sinnreich's Website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon7-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon7-16x16.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <script src="scripts/startupTheme.js"></script>
+
+  <div id="header-placeholder"></div>
+
+  <main id="scrollContainer" class="scroll-container">
+    <!-- SECTION 1 -> Start Homepage -->
+    <section class="section" id="section-1">
+      <div class="section-1-content">
+        <div class="personal-photo">
+          <img src="assets/Home/personal-photo.webp" alt="Photo of Ryan Sinnreich">
+        </div>
+        <div class="text-content">
+          <p>Hello, I'm Ryan Sinnreich</p>
+          <!-- START modified version of Animated Text Loader by kennyotsu (kotsu) -->
+          <div class="card">
+            <div class="loader">
+              <p>A</p>
+              <div class="words">
+                <span class="word">Photographer</span>
+                <span class="word">Computer Engineer</span>
+                <span class="word">Tennis Player</span>
+                <span class="word">Biker</span>
+                <span class="word">Coder</span>
+                <span class="word">Tinkerer</span>
+                <span class="word">Developer</span>
+                <span class="word">Bird Lover</span>
+                <span class="word">Maker</span>
+                <span class="word">Student</span>
+                <span class="word">Photographer</span>
+              </div>
+            </div>
+          </div>
+          <!-- END modified version of Animated Text Loader by kennyotsu (kotsu) -->
+        </div>
+      </div>
+      <a href="#section-2">
+        <button class="scroll-down-arrow">
+          <i class="ph ph-arrow-down"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- SECTION 2 -> About -->
+    <section class="section" id="section-2">
+      <div class="section-2-main-content">
+        <div class="about-text-content" id="about-me">
+          <h1>A Bit About Me...</h1>
+          <p>
+            I was born and raised in the SF Bay Area. Currently, I'm a sophomore at UW-Madison studying computer
+            engineering. My goal is to use engineering to build things that improve people's lives
+          </p>
+          <p>
+            During my free time you'll find me playing tennis, biking, 3D printing, coding, tinkering, taking photos, or
+            teaching myself new skills
+          </p>
+
+          <div class="about-social-links">
+            <a href="mailto:ryan@sinnreich.net" class="about-social-link" aria-label="My Email" id="about-email-link"><i
+                class="ph ph-envelope"></i></a>
+            <a href="https://www.instagram.com/ryan.sinnreich?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank"
+              id="about-instagram-link" rel="noopener noreferrer" class="about-social-link" aria-label="My Instagram"><i
+                class="ph ph-instagram-logo"></i></a>
+            <a href="https:www.linkedin.com/in/ryan-sinnreich" target="_blank" rel="noopener noreferrer"
+              class="about-social-link" id="about-linkedin-link" aria-label="My LinkedIn"><i
+                class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com/ryan-sinnreich" target="_blank" rel="noopener noreferrer"
+              class="about-social-link" id="about-linkedin-link" aria-label="My GitHub"><i
+                class="ph ph-github-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="about-image-content">
+          <img src="assets/Home/color-photo.webp" alt="Photo of me">
+        </div>
+      </div>
+
+      <section class="tech-stack-section">
+        <h2>My Tech Stack</h2>
+
+        <div class="scroller-container">
+          <div class="scroller">
+            <!-- The list of tech items needs to be duplicated in order for infinite scroll effect to work -->
+
+            <!-- First List -->
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-github-logo"></i></div>GitHub
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-py"></i></div>Python
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-coffee"></i></div>Java
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-code-block"></i></div>Xcode
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-cpu"></i></div>Arduino
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-code"></i></div>Swift
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-cpu"></i></div>Raspberry Pi
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-html"></i></div>HTML
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-css"></i></div>CSS
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-js"></i></div>JavaScript
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-figma-logo"></i></div>Figma
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-cube"></i></div>Fusion
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-fire"></i></div>Firebase
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-figma-logo"></i></div>Figma
+            </div>
+
+            <!-- Identical Second List -->
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-github-logo"></i></div>GitHub
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-py"></i></div>Python
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-coffee"></i></div>Java
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-code-block"></i></div>Xcode
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-cpu"></i></div>Arduino
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-code"></i></div>Swift
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-cpu"></i></div>Raspberry Pi
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-html"></i></div>HTML
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-css"></i></div>CSS
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-file-js"></i></div>JavaScript
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-figma-logo"></i></div>Figma
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-cube"></i></div>Fusion
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-fire"></i></div>Firebase
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon"><i class="ph ph-figma-logo"></i></div>Figma
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- SECTION 3 -> Projects -->
+    <section class="section" id="section-3">
+      <h1>Projects</h1>
+
+      <div class="projects-container">
+        <div class="projects-grid">
+
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/cameraSoftware.webp"
+              alt="Image of a Camera Control System">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Camera Control System</h3>
+                <div class="clickable-icon">
+                  <a href="https://youtube.com/shorts/u3D6jqZr43k?feature=share" rel="noopener noreferrer"
+                    target="_blank" class="clickable-link" aria-label="View demo video">
+                    <i class="ph-bold ph-video"></i>
+                  </a>
+                  <div class="clickable-tooltip">Demo Video</div>
+                </div>
+              </div>
+              <p class="project-description">
+                As part of Engineers for a Sustainable World amphibious camera trap team, I improved the motion
+                detection system and built a control system...
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-py"></i>Python</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>Raspberry Pi</span>
+                <span class="tech-tag"><i class="ph ph-circuitry"></i>Circuit</span>
+                <span class="tech-tag"><i class="ph ph-camera"></i>OpenCV</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 (Hidden when screen width too small) -->
+          <div class="project-card project-card-hidden-md">
+            <img class="project-card-image" src="assets/Projects/memoryGame.webp" alt="Image of a memory game">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Arduino Memory Game</h3>
+
+              </div>
+              <p class="project-description">
+                Programmed a memory game and built custom circuitry for it. The purpose of the game is to test players’
+                memory by requiring them to replicate a growing sequence of lights...
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-cpp"></i>C++</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>Arduino</span>
+                <span class="tech-tag"><i class="ph ph-circuitry"></i>Circuit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- View all Projects -->
+          <a href="projects.html" class="view-more-card">
+            <div class="view-more-content">
+              <span class="view-more-text">View all my projects</span>
+              <i class="ph-bold ph-arrow-right"></i>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -> Journey -->
+    <section class="section" id="section-4">
+      <h1 class="experience-title">My Journey</h1>
+      <div class="journey-wrapper">
+        <!-- Summer 2025 -->
+        <div class="journey-item start">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="journey-content">
+            <p class="journey-date">Summer 2025</p>
+            <h3 class="journey-title">Dock Hand</h3>
+            <p class="journey-company">Bay Area Electric Boats</p>
+            <p class="journey-description"> Managed guest check-ins and provided safety, navigation, and operation
+              instructions for electric boat rentals. Also cleaned and prepared boats for the next customers. Gained
+              practical experience working closely with a small, tight-knit team. In my free time, when not at work, I
+              improved my skills through personal projects and self-guided learning</p>
+          </div>
+        </div>
+        <!-- Summer 2026 -->
+        <div class="journey-item is-seeking">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="journey-content">
+            <p class="journey-date journey-date-seeking">Summer 2026</p>
+            <h3 id="typing-role" class="journey-title typing-title"></h3>
+            <p class="journey-company">?????????</p>
+            <p class="journey-description">I am actively looking for an internship related to my major in computer
+              engineering. I want to apply my academic knowledge to a real-world problem and make a positive impact on
+              the world</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -> Photography -->
+    <section class="section" id="section-5">
+      <div class="photography-container" id="photography-container">
+        <div class="photography-content-container">
+          <a href="photography.html" class="photography-text">My Photography</a>
+          <div class="photography-tooltip">Click to view my photography gallery</div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+  </main>
+
+  <!-- JS -->
+  <script src="scripts/header.js"></script>
+  <script src="scripts/home.js"></script>
+</body>
+
+</html>

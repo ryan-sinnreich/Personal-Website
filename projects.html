@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Ryan Sinnreich | Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hi I'm Ryan Sinnreich, this page displays some of the projects I have built" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon7-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon7-16x16.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/projects.css">
+
+  <!-- Phosphor Icons -->
+   <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="body">
+  <script src="scripts/startupTheme.js"></script>
+
+  <div id="header-placeholder"></div>
+
+  <main id="scrollContainer" class="scroll-container">
+    <div class="container">
+      <div class="intro-text">
+        <h1>My Projects</h1>
+        <p>Listed below are the tools I use to turn ideas into reality. Explore my recent projects and see what I used
+          to build each of them
+        </p>
+      </div>
+
+      <section class="tech-stack-section">
+        <div class="tech-category-group">
+          <h2>Languages</h2>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="ph ph-coffee"></i>Java</span>
+            <span class="tech-pill"><i class="ph ph-code"></i>Swift</span>
+            <span class="tech-pill"><i class="ph ph-file-html"></i>HTML</span>
+            <span class="tech-pill"><i class="ph ph-file-css"></i>CSS</span>
+            <span class="tech-pill"><i class="ph ph-file-js"></i>JavaScript</span>
+            <span class="tech-pill"><i class="ph ph-file-py"></i>Python</span>
+            <span class="tech-pill"><i class="ph ph-file-cpp"></i>C++</span>
+          </div>
+        </div>
+
+        <div class="tech-category-group">
+          <h2>Tools & Platforms</h2>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="ph ph-github-logo"></i>GitHub</span>
+            <span class="tech-pill"><i class="ph ph-fire"></i>Firebase</span>
+            <span class="tech-pill"><i class="ph ph-cloud"></i>Cloudflare</span>
+            <span class="tech-pill"><i class="ph ph-figma-logo"></i>Figma</span>
+            <span class="tech-pill"><i class="ph ph-cube"></i>Fusion</span>
+            <span class="tech-pill"><i class="ph ph-cpu"></i>Raspberry Pi</span>
+            <span class="tech-pill"><i class="ph ph-sliders"></i>Cura</span>
+            <span class="tech-pill"><i class="ph ph-file-image"></i>Pixelmator Pro</span>
+            <span class="tech-pill"><i class="ph ph-cpu"></i>Arduino</span>
+            <span class="tech-pill"><i class="ph ph-code-block"></i>Xcode</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section">
+        <div class="projects-grid">
+
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/cameraSoftware.webp"
+              alt="Image of a camera control system">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Camera Control System</h3>
+                <div class="clickable-icon">
+                  <a href="https://youtube.com/shorts/u3D6jqZr43k?feature=share" rel="noopener noreferrer"
+                    target="_blank" class="clickable-link" aria-label="View on demo video">
+                    <i class="ph-bold ph-video"></i>
+                  </a>
+                  <div class="clickable-tooltip">Demo Video</div>
+                </div>
+              </div>
+              <p class="project-description">
+                As part of Engineers for a Sustainable World amphibious camera trap team, I improved the motion
+                detection system and built a control system. The motion detection system uses a Raspberry Pi with a
+                low-res camera to trigger a high-res DSLR. I built and programmed a system to allow adjustment of the
+                system's settings in the field
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-py"></i>Python</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>Raspberry Pi</span>
+                <span class="tech-tag"><i class="ph ph-circuitry"></i>Circuit</span>
+                <span class="tech-tag"><i class="ph ph-camera"></i>OpenCV</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/memoryGame.webp" alt="Image of a memory game">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Arduino Memory Game</h3>
+              </div>
+              <p class="project-description">
+                Programmed a memory game and built custom circuitry for it. The purpose of the game is to test players’
+                memory by requiring them to replicate a growing sequence of lights. The screen displays the score and
+                game status
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-cpp"></i>C++</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>Arduino</span>
+                <span class="tech-tag"><i class="ph ph-circuitry"></i>Circuit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/personalWebsite.webp"
+              alt="Image of my personal website">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Personal Website</h3>
+                <div class="clickable-icon">
+                  <!-- TODO: ADD Link Below -->
+                  <a href="#" class="clickable-link" aria-label="View on GitHub">
+                    <i class="ph-bold ph-github-logo"></i>
+                  </a>
+                  <div class="clickable-tooltip">View Code</div>
+                </div>
+              </div>
+              <p class="project-description">
+                The website you are currently looking at. Here I showcase some of my work. I designed how I wanted the
+                site to look in Figma, then programmed it from scratch. Source code is available on GitHub
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-html"></i>HTML</span>
+                <span class="tech-tag"><i class="ph ph-file-css"></i>CSS</span>
+                <span class="tech-tag"><i class="ph ph-file-js"></i>JavaScript</span>
+                <span class="tech-tag"><i class="ph ph-figma-logo"></i>Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/3DPrints.webp"
+              alt="Image of some of the objects I have designed and 3D printed">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">3D Prints</h3>
+              </div>
+              <p class="project-description">
+                I use 3D printing to create solutions to real-world problems that come up. I model my designs in
+                Autodesk Fusion, then optimize print parameters in Cura for the best print. My projects vary widely,
+                from making replacement parts for things that need fixing to making custom objects that solve a very
+                specific problem </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-cube"></i>Fusion</span>
+                <span class="tech-tag"><i class="ph ph-sliders"></i>Cura</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <p class="more-projects-text">Many more projects are in the works...</p>
+
+    <div id="footer-placeholder"></div>
+  </main>
+
+  <!-- JS -->
+  <script src="scripts/header.js"></script>
+  <script src="scripts/projects.js"></script>
+</body>
+
+</html>

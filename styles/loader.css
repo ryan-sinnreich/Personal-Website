@@ -1,0 +1,182 @@
+/*
+ * Component: Animated Text Loader
+ * Original source: https://uiverse.io/kennyotsu/fresh-lizard-20
+ *
+ * - BEGIN LICENSE -
+ * Copyright - 2025 kennyotsu (kotsu) 
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * - END LICENSE -
+ */
+
+.card {
+  --bg-color: var(--background-color-light);
+  background-color: var(--bg-color);
+}
+
+body.dark-mode .card {
+  --bg-color: var(--background-color-dark);
+  background-color: var(--bg-color);
+}
+
+.loader {
+  color: rgb(0, 0, 0);
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5em;
+  padding: 10px 0px 10px 0px;
+}
+
+.loader p {
+  margin: 0px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(var(--bg-color) 5%,
+      transparent 20%,
+      transparent 70%,
+      var(--bg-color) 90%);
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  color: #32CD32;
+  animation: spin_4991 12s infinite;
+  white-space: nowrap;
+}
+
+body.dark-mode .word {
+  color: #32CD32;
+}
+
+@keyframes spin_4991 {
+  5% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  10% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  15% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  20% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  30% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+
+  45% {
+    -webkit-transform: translateY(-502%);
+    transform: translateY(-502%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-500%);
+    transform: translateY(-500%);
+  }
+
+  55% {
+    -webkit-transform: translateY(-602%);
+    transform: translateY(-602%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-600%);
+    transform: translateY(-600%);
+  }
+
+  65% {
+    -webkit-transform: translateY(-702%);
+    transform: translateY(-702%);
+  }
+
+  70% {
+    -webkit-transform: translateY(-700%);
+    transform: translateY(-700%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-802%);
+    transform: translateY(-802%);
+  }
+
+  80% {
+    -webkit-transform: translateY(-800%);
+    transform: translateY(-800%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-902%);
+    transform: translateY(-902%);
+  }
+
+  90% {
+    -webkit-transform: translateY(-900%);
+    transform: translateY(-900%);
+  }
+
+  95% {
+    -webkit-transform: translateY(-1002%);
+    transform: translateY(-1002%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1000%);
+    transform: translateY(-1000%);
+  }
+}

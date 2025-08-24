@@ -1,0 +1,70 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+p {
+  color: white;
+}
+
+.bg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#bg-blurry {
+  z-index: 1;
+  filter: blur(5px);
+  background-image: url('../assets/404/404-backround.webp');
+}
+
+#bg-clear {
+  z-index: 2;
+  -webkit-mask: url(#svg-mask);
+  mask: url(#svg-mask);
+  background-image: url('../assets/404/404-backround.webp');
+}
+
+.content {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.bottom-text-404 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFF;
+  font-size: 27px;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.bottom-text {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFF;
+  font-size: 22px;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
