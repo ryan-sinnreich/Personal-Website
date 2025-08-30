@@ -34,7 +34,7 @@ a {
 }
 
 .scroll-container {
-  height: 100vh;
+  height: 100svh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   /* Forces snap */
@@ -42,7 +42,7 @@ a {
 }
 
 .section {
-  height: 100vh;
+  height: 100svh;
   width: 100%;
   scroll-snap-align: start;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -50,7 +50,7 @@ a {
 
 #section-1 {
   background-color: var(--background-color);
-  height: calc(100vh - 0px);
+  height: calc(100svh - 0px);
   min-height: 500px;
   position: relative;
 }
@@ -536,6 +536,7 @@ a {
 
 .journey-content {
   text-align: left;
+  min-width: 0; 
 }
 
 .journey-date {
@@ -572,6 +573,8 @@ a {
 .typing-title {
   color: var(--text-color);
   height: 1.25em;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #section-5 {
@@ -582,7 +585,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100svh;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -866,6 +869,10 @@ body.dark-mode .photography-content-container:hover {
 
   .view-more-card {
     min-height: 100px;
+  }
+
+  #section-4 {
+    min-height: 800px;
   }
 
   .experience-title {

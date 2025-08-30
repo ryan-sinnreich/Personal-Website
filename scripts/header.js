@@ -9,7 +9,11 @@ function initializeHeaderScrollEffect() {
   const mobileDarkModeToggle = document.getElementById('mobileDarkModeToggle');
   const mobileMenu = document.getElementById('mobile-nav-menu');
   const mobileNavLinks = mobileMenu ? mobileMenu.querySelectorAll('nav a') : [];
+  const themeColorMeta = document.getElementById('theme-color-meta');
   const scrollThreshold = 50; // Pixels to scroll before header changes
+
+  const lightThemeColor = '#90EE90';
+  const darkThemeColor = '#16A34A';
 
   // Scroll Effect Logic
   if (header && nav && scrollContainer) {
@@ -45,8 +49,10 @@ function initializeHeaderScrollEffect() {
 
     if (body.classList.contains('dark-mode')) {
       localStorage.setItem('theme', 'dark');
+      themeColorMeta.setAttribute('content', darkThemeColor);
     } else {
       localStorage.setItem('theme', 'light');
+      themeColorMeta.setAttribute('content', lightThemeColor);
     }
   }
 

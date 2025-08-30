@@ -27,7 +27,7 @@ body.dark-mode {
 }
 
 .scroll-container {
-  height: 100vh;
+  height: 100svh;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
