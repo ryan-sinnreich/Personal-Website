@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Control Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LOADER OVERLAY -->
+        <div id="loader" class="loader-container">
+            <div class="spinner"></div>
+            <div class="loading-text">Screen is Refreshing... Please Wait</div>
+        </div>
+
+        <!-- LEFT COLUMN: CONTROLS -->
+        <div class="control-column">
+            <!-- TABS -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('calendar')">Calendar Mode</button>
+                <button class="tab-btn" onclick="switchTab('photo')">Photo Mode</button>
+            </div>
+
+            <!-- TAB CONTENT: CALENDAR -->
+            <div id="calendar-content" class="tab-content active">
+                <!-- Global Settings -->
+                <div class="card">
+                    <h2>Display Settings</h2>
+                    <form id="settingsForm" onsubmit="event.preventDefault(); saveSettings();">
+                        <div class="form-group">
+                            <label>View</label>
+                            <select id="themeSelect" onchange="saveSettings()">
+                                <option value="day">Day</option>
+                                <option value="week">Week</option>
+                                <option value="month">Month</option>
+                                <option value="list">List</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Refresh Frequency</label>
+                            <select id="refreshFreq" onchange="saveSettings()">
+                                <option value="5">5 Minutes</option>
+                                <option value="15">15 Minutes</option>
+                                <option value="30">30 Minutes</option>
+                                <option value="60" selected>1 Hour</option>
+                                <option value="180">3 Hours</option>
+                                <option value="360">6 Hours</option>
+                                <option value="720">12 Hours</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Font Size</label>
+                            <input type="number" id="fontSize" name="fontSize" min="5" max="30" value="20"
+                                onchange="saveSettings()">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Manage Calendars -->
+                <div class="card">
+                    <h2>Manage Calendars</h2>
+                    <div id="calendarList">
+                        <!-- Calendar Items Injected Here from JS -->
+                    </div>
+
+                    <div class="add-calendar-section">
+                        <h3 class="add-calendar-title">Add New Calendar</h3>
+                        <form id="addCalendarForm" onsubmit="event.preventDefault(); addCalendar();">
+                            <div class="form-group">
+                                <label>Calendar Name</label>
+                                <input type="text" id="newCalName" placeholder="e.g. Work Schedule" required>
+                            </div>
+                            <div class="form-group">
+                                <label>iCal URL (.ics)</label>
+                                <input type="url" id="newCalUrl" placeholder="https://..." required>
+                            </div>
+                            <div class="form-group">
+                                <label>Color</label>
+                                <div class="color-selector">
+                                    <div class="color-option c-blue selected" data-color="blue"
+                                        onclick="selectColor(this, 'blue')"></div>
+                                    <div class="color-option c-red" data-color="red" onclick="selectColor(this, 'red')">
+                                    </div>
+                                    <div class="color-option c-green" data-color="green"
+                                        onclick="selectColor(this, 'green')"></div>
+                                    <div class="color-option c-yellow" data-color="yellow"
+                                        onclick="selectColor(this, 'yellow')"></div>
+                                </div>
+                                <small id="colorMsg">All colors are in use. Delete a calendar to add a new one</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="addCalBtn">Add Calendar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: PHOTO FRAME -->
+            <div id="photo-content" class="tab-content">
+                <div class="card">
+                    <h2>Photo Upload</h2>
+                    <p class="photo-upload-desc">Upload an image to display. It will be automatically dithered and
+                        resized to 800x480.</p>
+                    <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                        <p>Click to Upload Image</p>
+                        <form id="photoForm">
+                            <input type="file" name="photo" id="fileInput" hidden accept="image/*"
+                                onchange="uploadPhoto(this)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: PREVIEW & CONTROLS -->
+        <div class="preview-column">
+
+            <!-- PREVIEW -->
+            <div class="card">
+                <h2>Status</h2>
+                <div class="preview-container" onclick="openModal()">
+                    <img src="preview.png" alt="Preview" class="preview-img" id="previewImage">
+                </div>
+
+                <div class="preview-stats">
+                    <div class="stat-box">
+                        <div class="stat-label">Last Refresh</div>
+                        <div class="stat-value" id="lastRefreshSpan">--:--</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-box">
+                        <div class="stat-label">Next Update</div>
+                        <div class="stat-value" id="nextRefreshSpan">--:--</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="card">
+                <h2>Controls</h2>
+                <div class="controls-group">
+                    <button class="btn btn-primary" onclick="triggerDeviceAction('refresh')">
+                        Refresh Screen Now
+                    </button>
+                    <button class="btn btn-danger" onclick="triggerDeviceAction('shutdown')">
+                        Shutdown (Clear)
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImg" class="modal-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -152,8 +152,7 @@ body.dark-mode {
   }
 
   .acknowledgements-header h1 {
-    font-size: 1.8rem;
-    font-size: clamp(1.8rem, 100vw, 2.2rem);
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
   }
 
   .acknowledgements-header p {
