@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title> Ryan Sinnreich | Projects</title>
+  <title>Ryan Sinnreich | Projects</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Hi I'm Ryan Sinnreich, this page displays some of the projects I have built" />
@@ -50,29 +50,33 @@
         <div class="tech-category-group">
           <h2>Languages</h2>
           <div class="tech-pills">
+            <span class="tech-pill"><i class="ph ph-code"></i>C</span>
+            <span class="tech-pill"><i class="ph ph-file-cpp"></i>C++</span>
+            <span class="tech-pill"><i class="ph ph-file-py"></i>Python</span>
             <span class="tech-pill"><i class="ph ph-coffee"></i>Java</span>
-            <span class="tech-pill"><i class="ph ph-code"></i>Swift</span>
+            <span class="tech-pill"><i class="ph ph-file-js"></i>JavaScript</span>
             <span class="tech-pill"><i class="ph ph-file-html"></i>HTML</span>
             <span class="tech-pill"><i class="ph ph-file-css"></i>CSS</span>
-            <span class="tech-pill"><i class="ph ph-file-js"></i>JavaScript</span>
-            <span class="tech-pill"><i class="ph ph-file-py"></i>Python</span>
-            <span class="tech-pill"><i class="ph ph-file-cpp"></i>C++</span>
+            <span class="tech-pill"><i class="ph ph-code"></i>Swift</span>
           </div>
         </div>
 
         <div class="tech-category-group">
           <h2>Tools & Platforms</h2>
           <div class="tech-pills">
+            <span class="tech-pill"><i class="ph ph-cpu"></i>ESP32</span>
+            <span class="tech-pill"><i class="ph ph-circuitry"></i>KiCad</span>
+            <span class="tech-pill"><i class="ph ph-cpu"></i>Arduino</span>
+            <span class="tech-pill"><i class="ph ph-cpu"></i>Raspberry Pi</span>
             <span class="tech-pill"><i class="ph ph-github-logo"></i>GitHub</span>
+            <span class="tech-pill"><i class="ph ph-cube"></i>Fusion</span>
             <span class="tech-pill"><i class="ph ph-fire"></i>Firebase</span>
+            <span class="tech-pill"><i class="ph ph-circuitry"></i>Altium</span>
             <span class="tech-pill"><i class="ph ph-cloud"></i>Cloudflare</span>
             <span class="tech-pill"><i class="ph ph-figma-logo"></i>Figma</span>
-            <span class="tech-pill"><i class="ph ph-cube"></i>Fusion</span>
-            <span class="tech-pill"><i class="ph ph-cpu"></i>Raspberry Pi</span>
             <span class="tech-pill"><i class="ph ph-sliders"></i>Cura</span>
-            <span class="tech-pill"><i class="ph ph-file-image"></i>Pixelmator Pro</span>
-            <span class="tech-pill"><i class="ph ph-cpu"></i>Arduino</span>
             <span class="tech-pill"><i class="ph ph-code-block"></i>Xcode</span>
+            <span class="tech-pill"><i class="ph ph-file-image"></i>Pixelmator Pro</span>
           </div>
         </div>
       </section>
@@ -81,9 +85,133 @@
         <div class="projects-grid">
 
           <!-- Project Card 1 -->
-           <div class="project-card">
-            <img class="project-card-image" src="assets/Projects/EInkCalendar.webp"
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/E-Cal_image1.webp" alt="Image of a e-ink calendar">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Embedded E-Ink Calendar</h3>
+                <div class="clickable-icon">
+                  <a href="#" class="clickable-link project-link-placeholder" aria-label="View Code"
+                    aria-disabled="true" tabindex="-1">
+                    <i class="ph-bold ph-github-logo"></i>
+                  </a>
+                  <div class="clickable-tooltip">View Code</div>
+                </div>
+              </div>
+              <p class="project-description">
+                Programmed firmware for an ESP32 to drive a 7.3-inch, six-color e-ink screen for my embedded calendar
+                application.
+                Built Wi-Fi setup and device pairing, scheduled content downloads, and a physical button for manual
+                refresh. The device sleeps between refreshes to
+                reduce power consumption. Custom PCB for even lower power consumption in the works.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-cpp"></i>C++</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>ESP32</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>Arduino</span>
+                <span class="tech-tag"><i class="ph ph-code-block"></i>PlatformIO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/E-Cal_Dashboard.webp"
               alt="Image of a camera control system">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">E-Ink Display Dashboard</h3>
+                <div class="clickable-icon">
+                  <a href="#" class="clickable-link project-link-placeholder" aria-label="View Code"
+                    aria-disabled="true" tabindex="-1">
+                    <i class="ph-bold ph-github-logo"></i>
+                  </a>
+                  <div class="clickable-tooltip">View Code</div>
+                </div>
+              </div>
+              <p class="project-description">
+                Built a <a href="https://ecal-1235e.web.app/index.html" target="_blank" rel="noopener noreferrer"
+                  style="color: var(--text-color-secondary); text-decoration: underline">web dashboard</a> and Firebase
+                backend for managing my embedded ESP32 e-ink calendar. Users can connect calendar feeds (.ics), upload
+                photos,
+                and choose views and display settings. Backend is fully scalable with Firebase and can support
+                "unlimited" devices. Backend renders binary images due to limited processing power of the ESP32.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-html"></i>HTML</span>
+                <span class="tech-tag"><i class="ph ph-file-css"></i>CSS</span>
+                <span class="tech-tag"><i class="ph ph-file-js"></i>JavaScript</span>
+                <span class="tech-tag"><i class="ph ph-fire"></i>Firebase</span>
+                <span class="tech-tag"><i class="ph ph-code"></i>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-card-image project-card-image-placeholder" role="img" aria-label="PDC Firmware banner">
+              <i class="ph-bold ph-cpu" style="font-size: 3.2rem;"></i>
+              <span style="font-size: 0.95rem; font-weight: 700; letter-spacing: 0.5px;">Badger Solar Racing
+                Firmware</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">PDC Firmware</h3>
+                <div class="clickable-icon">
+                  <a href="https://github.com/badgerloop-software/sc2-pdc" rel="noopener noreferrer" target="_blank"
+                    class="clickable-link" aria-label="View Code">
+                    <i class="ph-bold ph-github-logo"></i>
+                  </a>
+                  <div class="clickable-tooltip">View Code</div>
+                </div>
+              </div>
+              <p class="project-description">
+                Developed firmware for the power distribution controller for an electric solar-powered car as part of
+                Badger Solar Racing (Club). Implemented robust state-machine logic and CAN bus communication.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-cpp"></i>C++</span>
+                <span class="tech-tag"><i class="ph ph-code"></i>C</span>
+                <span class="tech-tag"><i class="ph ph-cpu"></i>STM32</span>
+                <span class="tech-tag"><i class="ph ph-circuitry"></i>CAN</span>
+                <span class="tech-tag"><i class="ph ph-circuitry"></i>Altium</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/BakesWebsite.webp"
+              alt="Image of the Cottage Bakery website">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <h3 class="project-title">Cottage Bakery Website</h3>
+                <div class="clickable-icon">
+                  <a href="https://honeyhillbakes.com" rel="noopener noreferrer" target="_blank" class="clickable-link"
+                    aria-label="Live Site">
+                    <i class="ph ph-globe"></i>
+                  </a>
+                  <div class="clickable-tooltip">Live Site</div>
+                </div>
+              </div>
+              <p class="project-description">
+                Designed and built a responsive, multi-page website for a local cottage bakery. The site showcases
+                baked goods, explains the ordering process, shares the bakery's story, and includes a secure customer
+                contact form with Cloudflare bot mitigation.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag"><i class="ph ph-file-html"></i>HTML</span>
+                <span class="tech-tag"><i class="ph ph-file-css"></i>CSS</span>
+                <span class="tech-tag"><i class="ph ph-file-js"></i>JavaScript</span>
+                <span class="tech-tag"><i class="ph ph-cloud"></i>Cloudflare</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="project-card">
+            <img class="project-card-image" src="assets/Projects/EInkCalendar.webp"
+              alt="Image of the Smart E-Ink Calendar">
             <div class="project-card-body">
               <div class="project-card-header">
                 <h3 class="project-title">Smart E-Ink Calendar</h3>
@@ -96,12 +224,15 @@
                 </div>
               </div>
               <p class="project-description">
-                Always on ultra-low-power smart calendar display. Hosts local web interface to manage settings, switch modes, change calendars, and upload images. Supports up to four calendars to be added through iCal feeds. Has four different calendar views (day, week, month, list) and refreshes at a specified frequency. Has a secondary mode to double as a Digital art frame.
+                Always on ultra-low-power smart calendar display. Hosts local web interface to manage settings, switch
+                modes, change calendars, and upload images. Supports up to four calendars to be added through iCal
+                feeds. Has four different calendar views (day, week, month, list) and refreshes at a specified
+                frequency. Has a secondary mode to double as a digital art frame.
               </p>
               <div class="tech-tags">
                 <span class="tech-tag"><i class="ph ph-file-css"></i>CSS</span>
                 <span class="tech-tag"><i class="ph ph-file-js"></i>JavaScript</span>
-                <span class="tech-tag"><i class="ph ph ph-network"></i>Flask</span>
+                <span class="tech-tag"><i class="ph ph-network"></i>Flask</span>
                 <span class="tech-tag"><i class="ph ph-file-py"></i>Python</span>
                 <span class="tech-tag"><i class="ph ph-cpu"></i>Raspberry Pi</span>
                 <span class="tech-tag"><i class="ph ph-file-html"></i>HTML</span>
@@ -109,7 +240,7 @@
             </div>
           </div>
 
-          <!-- Project Card 2 -->
+          <!-- Project Card 6 -->
           <div class="project-card">
             <img class="project-card-image" src="assets/Projects/cameraSoftware.webp"
               alt="Image of a camera control system">
@@ -128,7 +259,10 @@
                 As part of Engineers for a Sustainable World amphibious camera trap team, I improved the motion
                 detection system and built a control system. The motion detection system uses a Raspberry Pi with a
                 low-res camera to trigger a high-res DSLR. I built and programmed a system to allow adjustment of the
-                system's settings in the field (<a href="https://engineering.wisc.edu/news/undergrads-amphibious-imaging-system-captures-unseen-beauty-in-new-england-salt-marshes/" target="_blank" style="color: var(--text-color-secondary); text-decoration: underline" rel="noreferrer">Article About Project</a>)
+                system's settings in the field (<a
+                  href="https://engineering.wisc.edu/news/undergrads-amphibious-imaging-system-captures-unseen-beauty-in-new-england-salt-marshes/"
+                  target="_blank" style="color: var(--text-color-secondary); text-decoration: underline"
+                  rel="noreferrer">Article About Project</a>).
               </p>
               <div class="tech-tags">
                 <span class="tech-tag"><i class="ph ph-file-py"></i>Python</span>
@@ -139,7 +273,7 @@
             </div>
           </div>
 
-          <!-- Project Card 3 -->
+          <!-- Project Card 7 -->
           <div class="project-card">
             <img class="project-card-image" src="assets/Projects/memoryGame.webp" alt="Image of a memory game">
             <div class="project-card-body">
@@ -149,7 +283,7 @@
               <p class="project-description">
                 Programmed a memory game and built custom circuitry for it. The purpose of the game is to test players’
                 memory by requiring them to replicate a growing sequence of lights. The screen displays the score and
-                game status
+                game status.
               </p>
               <div class="tech-tags">
                 <span class="tech-tag"><i class="ph ph-file-cpp"></i>C++</span>
@@ -159,7 +293,7 @@
             </div>
           </div>
 
-          <!-- Project Card 4 -->
+          <!-- Project Card 8 -->
           <div class="project-card">
             <img class="project-card-image" src="assets/Projects/personalWebsite.webp"
               alt="Image of my personal website">
@@ -176,7 +310,7 @@
               </div>
               <p class="project-description">
                 The website you are currently looking at. Here I showcase some of my work. I designed how I wanted the
-                site to look in Figma, then programmed it from scratch. Source code is available on GitHub
+                site to look in Figma, then programmed it from scratch. Source code is available on GitHub.
               </p>
               <div class="tech-tags">
                 <span class="tech-tag"><i class="ph ph-file-html"></i>HTML</span>
@@ -187,7 +321,7 @@
             </div>
           </div>
 
-          <!-- Project Card 5 -->
+          <!-- Project Card 9 -->
           <div class="project-card">
             <img class="project-card-image" src="assets/Projects/3DPrints.webp"
               alt="Image of some of the objects I have designed and 3D printed">
@@ -199,7 +333,7 @@
                 I use 3D printing to create solutions to real-world problems that come up. I model my designs in
                 Autodesk Fusion, then optimize print parameters in Cura for the best print. My projects vary widely,
                 from making replacement parts for things that need fixing to making custom objects that solve a very
-                specific problem </p>
+                specific problem.</p>
               <div class="tech-tags">
                 <span class="tech-tag"><i class="ph ph-cube"></i>Fusion</span>
                 <span class="tech-tag"><i class="ph ph-sliders"></i>Cura</span>

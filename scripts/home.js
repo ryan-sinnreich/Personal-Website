@@ -3,13 +3,12 @@ async function startTypingAnimation() {
   if (!typingRoleEl) return;
 
   const roles = [
+    "Firmware Engineer",
+    "Hardware Engineer",
     "Software Engineer",
-    "Web Developer",
     "Embedded Systems Engineer",
-    "IOS Mobile App Developer",
-    "Internship",
-    "Game Developer",
-    "Hardware Engineer"
+    "Robotics Engineer",
+    "Integration Engineer"
   ];
 
   const typingSpeed = 120;
